@@ -1,0 +1,118 @@
+footer {
+    background-color: #396aff;
+    color: white;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-logo-section,
+.footer-links-section,
+.footer-contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.25rem;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-section p {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social-icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-links-section h3,
+.footer-contact-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-links-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links-section ul li a:hover {
+    color: #ddd;
+}
+
+.footer-contact-section p {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.footer-contact-section p i {
+    margin-right: 0.5rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 0;
+    max-height: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+        text-align: left; /* Center-align text for smaller screens */
+    }
+
+    .footer-logo-section,
+    .footer-links-section,
+    .footer-contact-section {
+        align-items: left;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .footer-logo-section p,
+    .footer-contact-section p {
+        text-align: left;
+    }
+
+    .footer-social-icons {
+        justify-content: center; 
+    }
+
+    .footer-bottom {
+        padding-top: 0.5rem;
+    }
+}
